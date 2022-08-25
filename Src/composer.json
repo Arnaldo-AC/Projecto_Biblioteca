@@ -1,0 +1,17 @@
+{
+    "name": "tliv/mvc",
+    "description": "curso mvc.",
+    "authors": [
+        {
+            "name": "pancada",
+            "email": "pancada@gmail.com"
+        }
+    ],
+    "require": {"phpmailer/phpmailer": "^6.5"},
+    "autoload":{
+        "psr-4":{
+            "App\\":"../App/",
+            "Src\\":"../Src/"
+        }
+    }
+}

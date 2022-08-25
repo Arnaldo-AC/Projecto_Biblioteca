@@ -1,0 +1,449 @@
+@charset "utf-8";
+:root{
+    font-family: FreeSans;
+    --verde1 :#17A655;
+    --verde2: #268C52;
+    --verde3: #2EA662;
+}
+body{
+    height: 100vh;
+}
+.header-dashboard{
+    height: 65px;
+    background-color: #FFF;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.486);
+    opacity: 0.9;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+}
+.extra{
+    width: 250px;
+    height: 40px;
+    background-color: #fff;
+}
+.bloco-usuario{
+    
+    height: 50px;
+    /*background-color: red;*/
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.foto-usuario{
+    width: 40px;
+    height: 40px;
+    border-radius: 80px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.foto-func{
+    width: 100%;
+    height: 100%;
+}
+.nome-usuario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 150px;
+    height: 20px;
+    color: #8f8f8f;;
+    margin-left: 16px;
+}
+#nome{
+    font-size: 18px;
+}
+
+.mais-opcoes{
+    width: 16px;
+    height: 20px;
+}
+.down{
+    width: 16px;
+}
+.main-dashboard{
+    height: 100vh;
+    display: flex;
+}
+.nav-dashboard{
+    position: relative;
+    padding-top: 20px;
+    padding-right: 12px;
+    /* width: 340px; */
+    background-color: #FFF;
+    box-shadow: 1px 0 5px #fff;
+    opacity: 0.9;
+    box-sizing: border-box;
+}
+.menu{
+    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.404);
+}
+.area-apresentacao{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../img/fundoSite.jpg");
+    padding-top: 20px;
+    overflow: auto;
+}
+
+.lista-links{
+    margin: 20px 0 0 8px;
+    height: 380px;
+    /*background-color: yellow;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.link{
+    box-sizing: border-box;
+    padding-left: 12px;
+    border-left: 2px #a3a2a2 solid;
+    transition-duration: 0.1s;
+}
+
+.link:hover{
+    
+    border-color: rgb(4, 233, 4);
+}
+
+.dentro{
+    display: flex;
+    align-items: center;
+    width: 220px;
+    /*background-color: yellow;*/
+    box-sizing: border-box;
+    display: flex;
+}
+
+.icon{
+    width: 40px;
+    height: 35px;
+    margin-right: 0px;
+    /*background-color: red;*/
+}
+
+ div.descricao{
+    width: 140px;
+    color: var(--verde2);
+    font-size: 16px;
+   /* background-color: yellow;*/
+    margin-left: 16px;
+}
+
+.icon-menu{
+    height: 30px;
+}
+.logo-aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.linha{
+    width: 180px;
+    height: 1px;
+    background-color: #d1cece;
+    margin-top: 8px;
+}
+
+
+
+
+.data-hora{
+    display: flex;
+    width: 260px;
+    height: 30px;
+    padding-left: 20px;  
+    position: absolute;
+    bottom: 20px;  
+}
+
+.data{
+    width: 115px;
+    height: 100%;
+    color: var(--verde1);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-right: 1px #a2a2a2 solid;
+    padding-right: 8px;
+}
+
+.data:nth-of-type(2){
+    margin-left: 8px;
+    width: 100px;
+    border:none;
+    padding: 0px;
+}
+
+/*-----------------------------------------*/
+
+.usuario{
+    width: 650px;
+    height: 500px;
+    /*background-color: yellow;*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.usuario .linha{
+    margin: 10px 0 20px 0;
+    width: 350px;
+    height: 3px;
+}
+.foto{
+    width: 350px;
+    height: 350px;
+    /*background-color: red;*/
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 20px #fff;
+}
+.foto img{
+    width: 100%;
+}
+.descricao-usuario{
+    width: 100%;
+    height: 50px;
+    /*background-color: green;*/
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    color: #fff;
+}
+
+.separador-vertical{
+    display: block;
+    height: 25px;
+    width: 3px;
+    margin: 0 10px;
+    background-color: rgb(4, 233, 4);
+}
+
+.titulo{
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 10px;
+    font-family: FreeSans;
+}
+
+/*Estilizando a area de produtos*/
+
+
+
+.ap-produtos{
+    background-image: none;
+    display: block;
+    padding-left: 16px;
+}
+
+.section-pag-produto{
+    
+    margin-bottom: 24px;
+    position: relative;
+}
+.cabecalho-section{
+    /* height: 60px; */
+    /* background-color: red; */
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.icon-section{
+    /* width: 40px; */
+    /* height: 30px; */
+
+    /* background-color: #a2a2a2; */
+}
+
+.container-tabela{
+    /* background-color: red; */
+    margin-top: 15px;
+    width: 100% !important;
+    overflow:auto;
+}
+th[scope="col"]{
+    color: var(--verde3);
+    min-width: 120px;
+}
+.col-action{
+    /* min-width: 210px; */
+}
+.col-id{
+    min-width: 60px !important;
+}
+.titulo-section{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #a3a2a2;
+    margin-left: 8px;
+    margin-bottom: 0;
+}
+
+
+.box-input{
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-left: 20px;
+    /* background-color: red; */
+    position: relative;
+}
+.box-input .rotulo{
+    position: absolute;
+    top: 0;
+    left: 7px;
+    font-size: 12px;
+    color: #a2a2a2;
+}
+.form-principal{
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.subform{
+    /* background-color: red; */
+    width: 790px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    border-right: 2px solid #e0e0e0
+}
+.box-img-form{
+    flex-grow: 1;
+}
+.box-img{
+    position: relative;
+    width: 74px;
+    height: 66px;
+    margin: auto;
+    /* background-image: url(../img/picture2.png);
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+#btn-add-file{
+    position: absolute;
+    top: 0;
+    left:0;
+    padding:0;
+    z-index: 100;
+    border: none;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    opacity: 0;
+    cursor: pointer;
+}
+.box-img-form p{
+    text-align: center;
+    color: #a2a2a2;
+    margin-top: 8px;
+    font-size: 14px; 
+}
+form input{
+    background-color: white;
+    border: none;
+    border-left: 2px solid var(--verde3);
+    border-bottom: 2px solid var(--verde3);
+    border-bottom-left-radius: 6px;
+    width: 220px;
+    height: 28px;
+    outline: none;
+    padding: 0 5px;
+    font-size: 16px;
+}
+
+#pagina-atual{
+    border-color: rgb(4, 233, 4);
+}
+
+.img-save{
+    /* height: 24px; */
+    margin-right: 4px;
+}
+
+.btn-submit{
+    position: absolute;
+    right: 20px;
+    top: 0;
+    background-color: #a2a2a223;
+    width: 120px;
+    height: 38px;
+    border: none;
+    border-top: 2px solid var(--verde2);
+    border-right: 2px solid var(--verde2);
+    /* font-weight: bold; */
+    border-top-right-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-transform: uppercase; 
+    color: var(--verde2)
+}
+
+.box-input.especial{
+    margin-top: 0;
+    height: auto;
+    display: block;
+    position: relative;
+}
+
+.img-lupa{
+    position: absolute;
+    right: 8px;
+    top: 4px;
+}
+
+.cabecalho-section-view{
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+input[type="search"]{
+    border: 2px solid var(--verde2);
+    width: 240px;
+    padding:0;
+    padding-left: 4px;
+    padding-bottom: 4px;
+    /* padding-top: 8px; */
+    border-top-right-radius: 6px;
+}
+
+
+.btn-action{
+    width: 80px;
+    background-color: #a2a2a223; 
+    border: none;
+    border-top: 2px solid var(--verde2);
+    border-right: 2px solid var(--verde2);
+    border-top-right-radius: 6px;
+    font-size: 16px;
+    color: var(--verde2);
+    margin: 0 5px;
+}
+/* .col-action{
+    display: flex;
+    justify-content: space-around;
+
+} */
+
+
+
+/* estilo das tabelas */
+
